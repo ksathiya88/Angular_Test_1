@@ -6,17 +6,23 @@
     <input type="text" [value]="aa" (input)="inputChange($event)">
     <input [(ngModel)]="aa">
     <input [ngModel]="aa" (ngModelChange)="aa=$event"> -->
-  <!-- Directives -->
+
+    <!-- Directives -->
   <!-- structural Directive -->
-  <input [(ngModel)]="aa" *ngIf="aa==10">
+  <!-- <input [(ngModel)]="aa" *ngIf="aa==10">
   <div *ngFor="let elem of arrayVal">
     <h2>{{elem}}</h2>
-  </div>
+  </div> -->
+
+  <!-- Attribute directive -->
+  <!-- <input [(ngModel)]="aa" [ngStyle]="{color:colorVal,backgroundColor:backColor}">
+  <br>
+  <input [(ngModel)]="aa" [ngClass]="{colorClass:aa==10}"> -->
 
 
 
 
 
-  
+
   <app-newcomp></app-newcomp>
 </div>

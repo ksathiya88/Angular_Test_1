@@ -10,6 +10,7 @@ export class NewcompComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
