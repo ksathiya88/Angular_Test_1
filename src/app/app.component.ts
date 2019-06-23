@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'testApp';
+  aa = '10';
+
+  
+  arrayVal = ['1', '2', '3'];
+
+  inputChange(event) {
+    let b =10;
+    console.log("Input Event", event);
+    this.aa = event.target.value;
+  }
 }
