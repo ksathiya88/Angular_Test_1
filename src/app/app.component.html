@@ -7,7 +7,7 @@
     <input [(ngModel)]="aa">
     <input [ngModel]="aa" (ngModelChange)="aa=$event"> -->
 
-    <!-- Directives -->
+  <!-- Directives -->
   <!-- structural Directive -->
   <!-- <input [(ngModel)]="aa" *ngIf="aa==10">
   <div *ngFor="let elem of arrayVal">
@@ -20,9 +20,40 @@
   <input [(ngModel)]="aa" [ngClass]="{colorClass:aa==10}"> -->
 
 
+  <!-- custom directive -->
+  <!-- <input [(ngModel)]="aa" appCustom>
+  <br>
+  <input [(ngModel)]="cc" appCustom>
+  <br>
+  <input type="button" value="Submit" appCustom> -->
+
+  <!-- BuiltIn Pipes -->
+  <div *ngFor="let elem of arrayVal">
+    <h2>{{elem | titlecase}}</h2>
+  </div>
+
+  <div *ngFor="let elem of dateVal">
+    <h2>{{elem | date}}</h2>
+  </div>
+
+  Currency:{{currentRate | currency:'RUP'}}
+
+  <!-- Custom Pipes -->
+  <div *ngFor="let elem of arrayVal">
+    <h2>{{elem | test:'-':'*'}}</h2>
+  </div>
 
 
 
 
-  <app-newcomp></app-newcomp>
+
+
+  Array:{{arrayVal}}
+
+
+
+
+
+
+  <!-- <app-newcomp></app-newcomp> -->
 </div>

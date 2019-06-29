@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newcomp.component.css']
 })
 export class NewcompComponent implements OnInit {
-
-  constructor() { }
+  sample = "sample";
+  constructor() {
+    console.log("class constructed");
+  }
 
   ngOnInit() {
-    
+    console.log("newComponent intialized");
+  }
+
+  ngOnDestroy() {
+    console.log("newComponent ngOnDestroyed called");
   }
 
 }

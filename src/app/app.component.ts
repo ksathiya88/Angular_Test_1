@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   aa = '10';
+  cc = "sample";
+
+  currentRate ="0.26";
 
 
-  arrayVal = ['1', '2', '3'];
+  arrayVal = ['some string', 'bbbb', 'ccccc'];
+  dateVal = [new Date(), new Date(), new Date()];
+
+
 
   colorVal = "yellow";
   backColor = "red";
