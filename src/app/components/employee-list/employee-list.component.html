@@ -1,0 +1,3 @@
+<div class="employee_class" *ngFor="let employeeInput of employees">
+  <app-employee [employee]="employeeInput" (delete)="deleteFn(employees,$event)"></app-employee>
+</div>
