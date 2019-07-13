@@ -1,22 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DeleteService {
-
-  constructor() {
-
-  }
+  constructor() {}
   delete(list, key) {
-    let empObj = list.find((emp) => {
+    let empObj = list.find(emp => {
       return emp.key == key;
     });
     let index = list.indexOf(empObj);
     list.splice(index, 1);
   }
-
-
-
-
 }

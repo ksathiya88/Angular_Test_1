@@ -1,4 +1,4 @@
-<div><label>Employee Name:</label>{{employee.name | uppercase }}</div>
-<div><label>DOB:</label>&nbsp;&nbsp;{{employee.date_of_birth }}</div>
-<div><label>Position Held:</label>{{employee.position_held  }}</div>
+<div><label appAppHeader>Employee Name:</label>{{employee.name | uppercase }}</div>
+<div><label appAppHeader>DOB:</label>&nbsp;&nbsp;{{employee.dateOfBirth | date:'longDate'}}</div>
+<div><label appAppHeader>Position Held:</label>{{employee.positionHeld}}</div>
 <div><input type="button" value="Delete" (click)="deleteFn(employee.key)" /></div>
